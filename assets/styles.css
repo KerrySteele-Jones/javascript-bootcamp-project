@@ -9,6 +9,18 @@
   --fs-xl: 2rem;              /* 32px */
   --fs-xxl: 2.5rem;           /* 40px */
 
+    /* Website colours */
+    --website-color-primary: #E63946;
+    --website-color-secondary: #F4A261;
+    --website-color-third: #fadeb0;
+    --website-color-accent: #2A9D8F;
+    --website-color-light-bg: #F1FAEE;
+    --website-color-dark-headings: #103b77;
+    --dark-body-text-color: #3D3D3D;
+    --light-text-color: #6D6D6D;
+    --color-white:#FFFFFF; 
+    --color-black: #000000;
+
 }
 
 body {
@@ -28,6 +40,66 @@ body {
 }
 
 h1 {
-    font-family: 'poppins' sans-serif;
-    font-size: ;
+    font-family: var(--font-heading);
+    color: var(--website-color-primary);
+
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--dark-body-text-color);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: var(--website-color-accent);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--website-color-secondary);
+}
+
+.cat-brand {
+  margin-top: 2rem;
+}
+
+.cat-brand img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.error-message {
+  color: var(--website-color-primary);
+  font-weight: bold;
+  min-height: 1rem;
+  font-size: 1rem;
+}
+
+.task-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--website-color-third);
+  padding: 0.5rem;
+  border-radius: 0.5 rem;
+  margin-bottom: 1rem;
+  font-size: var(--fs-sm);
 }

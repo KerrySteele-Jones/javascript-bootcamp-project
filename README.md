@@ -13,3 +13,7 @@
 
 
 # 👀 Spanish Translations
+
+
+# 👀 Resources that helped me to create the todo list
+
