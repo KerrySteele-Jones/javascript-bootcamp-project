@@ -85,6 +85,12 @@ button:hover {
   margin: 0 auto;
 }
 
+.task-box {
+  margin-top: 1rem;
+  color: var(--website-color-accent);
+  font-weight:bold ;
+}
+
 .error-message {
   color: var(--website-color-primary);
   font-weight: bold;
@@ -92,14 +98,16 @@ button:hover {
   font-size: 1rem;
 }
 
-.task-list {
-  list-style: none;
+.list-section li {
+  list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--website-color-third);
-  padding: 0.5rem;
-  border-radius: 0.5 rem;
-  margin-bottom: 1rem;
-  font-size: var(--fs-sm);
+  padding: 0;
+  color: var(--dark-body-text-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.list-section li:hover {
+  transform: scale(1.02);
+  background-color: var(--website-color-secondary);
+  color: #F1FAEE;
 }

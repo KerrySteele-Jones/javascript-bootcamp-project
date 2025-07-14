@@ -34,6 +34,17 @@ function renderTasks() {
 
     tasks.forEach((task) => {
         const li = document.createElement ("li");
+
+        const span = document.createElement("span");
+        span.textContent = task;
+
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent ="🗑️";
+        deleteBtn.classList.add("dele-button");
+
+
+
+
         li.textContent = task;
         taskList.appendChild(li);
     });
