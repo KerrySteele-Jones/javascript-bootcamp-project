@@ -43,7 +43,7 @@ function renderTasks() {
         deleteBtn.classList.add("delete-button");
 
         deleteBtn.addEventListener("click", () => {
-            tasks.splice(indexed, 1);
+            tasks.splice(index, 1);
             renderTasks();
 
         });
