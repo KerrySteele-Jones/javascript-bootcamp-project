@@ -24,7 +24,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     background-color: #fef6e4;
     margin: 0;
     padding: 2rem;
@@ -101,13 +101,15 @@ button:hover {
 .list-section li {
   list-style-type: none;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0;
   color: var(--dark-body-text-color);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 1rem;
 }
 
-.list-section li:hover {
-  transform: scale(1.02);
-  background-color: var(--website-color-secondary);
-  color: #F1FAEE;
+.delete-button {
+  margin-left: 2rem;
+  background-color: #fef6e4;
 }
+

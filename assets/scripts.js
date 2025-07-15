@@ -40,13 +40,19 @@ function renderTasks() {
 
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent ="🗑️";
-        deleteBtn.classList.add("dele-button");
+        deleteBtn.classList.add("delete-button");
+
+        deleteBtn.addEventListener("click", () => {
+            tasks.splice(indexedDB, 1);
+            renderTasks();
+
+        });
 
 
 
-
-        li.textContent = task;
-        taskList.appendChild(li);
+    li.appendChild(span);       
+    li.appendChild(deleteBtn);   
+    taskList.appendChild(li);
     });
 }
 
